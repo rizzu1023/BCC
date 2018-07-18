@@ -1,0 +1,26 @@
+body{
+	font-size: 16pt    /*basically 16pt font size is used in websites*/
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+header nav ul
+{
+	background-color: #36779D;
+	text-align: center;
+	font-size: 16pt;
+	margin:0;
+	padding-left: 0;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: #ffffff
+}
+
+header nav ul li{
+	display: inline-block;
+	padding: 20px;
+	
+}
