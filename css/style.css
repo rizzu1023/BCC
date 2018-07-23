@@ -8,21 +8,24 @@ body{
              
 }
 
-
-header nav ul{
-	margin:0;
+header nav{
+	background-color:#36779D;
+	margin: 0;
 	padding-left: 0;
-	overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;	
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	
+
 }
+
+
 
 header nav ul li{
 	display: inline-block;
 	padding: 0px;
     float: left;
-    background-color:#36779D;
     text-align: center;
     font-size: 16pt;
     
