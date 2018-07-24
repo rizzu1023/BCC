@@ -5,7 +5,7 @@ body{
 	box-sizing: border-box;
 	/*background-position: center;
 	background-size: cover;*/
-             
+
 }
 
 header ul{
@@ -13,15 +13,13 @@ header ul{
 }
 
 header nav{
-	background-color:#36779D;
+	background-color:#484b4d;
 	margin: 0;
 	padding-left: 0;
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: 100%;
-	
-
 }
 
 
@@ -32,7 +30,7 @@ header nav ul li{
     float: left;
     text-align: center;
     font-size: 16pt;
-    
+
 }
 
 header nav ul li a{
@@ -40,13 +38,18 @@ header nav ul li a{
 	color: #ffffff;
 	padding: 15px 20px;
 	display: inline-block;
-    
+
 	}
 
 
 
 header nav ul li:hover{
-	background-color: #333;
+	/* background-color: #333; */
+	text-shadow: 2px 2px 3px #fff;
 }
 
-
+.active{
+	background-color: #000;
+	border-right: 0.5px solid #ffc107;
+  border-left: 0.5px solid #ffc107;
+}
