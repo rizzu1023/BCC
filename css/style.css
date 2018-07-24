@@ -8,6 +8,10 @@ body{
              
 }
 
+header ul{
+	margin: 0;
+}
+
 header nav{
 	background-color:#36779D;
 	margin: 0;
@@ -45,8 +49,4 @@ header nav ul li:hover{
 	background-color: #333;
 }
 
-.anker{
-	
-	background-color: #222;
-}
 
