@@ -3,6 +3,7 @@ body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* position: relative; */
 	/*background-position: center;
 	background-size: cover;*/
 
@@ -20,6 +21,7 @@ header nav{
 	top: 0;
 	right: 0;
 	width: 100%;
+	z-index: 9999;
 }
 
 
@@ -50,6 +52,6 @@ header nav ul li:hover{
 
 .active{
 	background-color: #000;
-	border-right: 0.5px solid #ffc107;
-  border-left: 0.5px solid #ffc107;
+	border-right: 0.5px solid #FCE290;
+  border-left: 0.5px solid #FCE290;
 }
