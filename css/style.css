@@ -50,11 +50,11 @@ header nav ul li a{
 header nav ul li:hover{
 	/* background-color: #333; */
 	/* text-shadow: 2px 2px 3px #fff; */
-	background-color: #3CB472;
+	background-color: #3CB4f2;
 }
 
 .active{
-	background-color: #3CB472;
+	background-color: #3CB4f2;
 	border-right: 0.5px solid #fff;
   border-left: 0.5px solid #fff;
 }
