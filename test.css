@@ -1,0 +1,35 @@
+p{
+  background-color: cyan;
+  position: relative;
+}
+
+#table td{
+  border: 1px solid;
+  margin:0px;
+  padding: 10px;
+  text-align: center;
+
+}
+
+#table{
+  width: 900px;
+  position: relative;
+  display: border-box;
+  left:100px;
+
+}
+
+#b1{
+  position: relative;
+  left: 450px;
+  top: 50px;
+  border-radius: 8px;
+  width: 15%;
+  background-color:#2f2f2f;
+  color: white;
+
+}
+
+
+#b1:hover{
+  background-color:#3CB4f2;
