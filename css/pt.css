@@ -38,7 +38,7 @@ body{
   /* border:1px solid black; */
 
   width: 97%;
-  height: 100px;
+  height: 200px;
   margin-left: 20px;
   border-collapse: collapse;
   empty-cells: show;
@@ -53,13 +53,13 @@ body{
 }
 
 .table1 td{
-  padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 7px;
 }
 
 .table, tbody tr{
-  border-bottom: 1px solid #3CB4f2;}
-
-
+  border-bottom: 1px solid #fff;
+}
 
 .table1 td:nth-child(1){
   padding-left: 2px;
