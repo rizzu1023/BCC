@@ -1,4 +1,4 @@
-.squadList{
+  .squadList{
   position:  absolute;
   border-top: 1px solid #fff;
   top: 54px;
@@ -20,14 +20,20 @@
 
 }
 
+.ull a
+{
+  /* width: 100%; */
+}
+
 
 .ull{
-  position: absolute;
+  position: relative;
   list-style: none;
   top: 90px;
   display: inline-block;
   top: 100px;
   left: -20px;
+  width: 97%;
 }
 
 
@@ -35,7 +41,7 @@
   position: relative;
   margin-top: 16px;
   height: 70px;
-  width: 1250px;
+  /* width: 1250px; */
   /* border: 1px solid black; */
   border-radius: 33px;
   background-color: #2f2f2f ;

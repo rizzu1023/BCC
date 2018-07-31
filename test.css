@@ -9,6 +9,7 @@ p{
   padding: 10px;
   text-align: center;
 
+
 }
 
 #table{
@@ -16,7 +17,7 @@ p{
   position: relative;
   display: border-box;
   left:100px;
-
+  border-collapse: collapse;
 }
 
 #b1{

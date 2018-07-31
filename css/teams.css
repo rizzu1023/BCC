@@ -2,11 +2,13 @@
 		position: relative;
 		list-style: none;
 		float: left;
+
 }
 
 .ull{
 	padding: 0;
 	margin-top: 30px;
+	width: 100%;
 }
 
 
@@ -31,6 +33,7 @@
   height: 340px;
   border-radius: 6px;
   display: inline-block;
+	margin-left: 8px;
 
 }
 
