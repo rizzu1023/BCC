@@ -1,3 +1,5 @@
+<?php $v=10; ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,7 +15,7 @@
 					<a href="test.html" title="logo">Logo</a>
 				</li>
 				<li>
-					<a  href="index.html" title="home page">Home</a>
+					<a  href="index.php" title="home page">Home</a>
 				</li>
 				<li>
 					<a href="#" title="live score">Live Score</a>
@@ -31,7 +33,7 @@
 					<a href="#" title="photos">Photos</a>
 				</li>
 				<li>
-					<a class="active" href="pt.html" title="photos">Points Table</a>
+					<a class="active" href="pt.php" title="photos">Points Table</a>
 				</li>
 				<li style="float: right">
 					<a class="anker" href="login.html" title="loginform">Log in</a>
@@ -59,7 +61,7 @@
   <tr>
     <td>1</td>
     <td>Kolkata Knight Riders</td>
-    <td>4</td>
+    <td><?php echo $v; ?></td>
     <td>3</td>
     <td>1</td>
     <td>0</td>

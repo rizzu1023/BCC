@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php echo "hello"; ?>
+ <!DOCTYPE html>
 <html>
 	<head>
 		<title>BCC</title>
@@ -9,13 +10,13 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="test.html" title="logo">Logo</a>
+					<a href="#" title="logo">Logo</a>
 				</li>
 				<li>
-					<a class="active" href="index.html" title="home page">Home</a>
+					<a class="active" href="index.php" title="home page">Home</a>
 				</li>
 				<li>
-					<a href="Registration.html" title="live score">Live Score</a>
+					<a href="#" title="live score">Live Score</a>
 				</li>
 				<li>
 					<a href="#" title="schedule">Schedule</a>
@@ -30,7 +31,7 @@
 					<a href="#" title="photos">Photos</a>
 				</li>
 				<li>
-					<a href="pt.html" title="photos">Points Table</a>
+					<a href="pt.php" title="photos">Points Table</a>
 				</li>
 				<li style="float: right">
 					<a class="anker" href="login.html" title="loginform">Log in</a>
@@ -40,7 +41,11 @@
 	</header>
 
 	<br><br><br>
-	<h1>Under....Construction</h1>
+	<h1>Under....Construction</h1><br></br>
+	<a href="registration.html" id="test">Registraion Form</a><br><br>
+	<a id="test" href="test.php">PHP test</a><br><br>
+	<a id="test" href="jquery.html">JQuery test</a><br><br>
+	<a id="test" href="javascript.html">JS test</a>
 
 
 
