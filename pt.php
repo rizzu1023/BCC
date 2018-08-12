@@ -1,5 +1,3 @@
-<?php $v=10; ?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -53,71 +51,66 @@
     <th>Won</th>
     <th>Lost</th>
     <th>Tied</th>
-		<th>Pts</th>
+	<th>Pts</th>
     <th>NRR</th>
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>1</td>
-    <td>Kolkata Knight Riders</td>
-    <td><?php echo $v; ?></td>
-    <td>3</td>
-    <td>1</td>
-    <td>0</td>
-		<td>6</td>
-    <td>+0.966</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Mumbai Indians</td>
-    <td>6</td>
-    <td>1</td>
-    <td>5</td>
-    <td>0</td>
-		<td>2</td>
-    <td>-0.566</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Kings XI Punjab</td>
-    <td>5</td>
-    <td>3</td>
-    <td>2</td>
-    <td>0</td>
-		<td>6</td>
-    <td>+1.366</td>
-  </tr>
-	<tr>
-    <td>4</td>
-    <td>Royal Challangers Banglore</td>
-    <td>6</td>
-    <td>3</td>
-    <td>3</td>
-    <td>0</td>
-		<td>6</td>
-    <td>-2.566</td>
-  </tr>
-	<tr>
-    <td>5</td>
-    <td>Chennai Super Kings</td>
-    <td>5</td>
-    <td>2</td>
-    <td>3</td>
-    <td>0</td>
-		<td>4</td>
-    <td>-1.366</td>
-  </tr>
-	<tr>
-    <td>6</td>
-    <td>Sunrisers Hydrabad</td>
-    <td>6</td>
-    <td>1</td>
-    <td>5</td>
-    <td>0</td>
-		<td>2</td>
-    <td>-0.366</td>
-  </tr>
+<?php
+        
+$servername="localhost";
+$username="root";
+$password="test";
+$dbname="BCC";
+
+$conn=new mysqli($servername,$username,$password,$dbname);
+
+if($conn->connect_error){
+    die($conn->connect_error);
+}
+else{
+    
+}
+$teamID=$_POST['teamID'];
+$teamName=$_POST['teamName'];
+$matches=$_POST['matches'];
+$won=$_POST['won'];
+$lost=$_POST['lost'];
+$tied=$_POST['tied'];
+$points=$_POST['points'];
+$NRR=$_POST['NRR'];
+
+
+
+$sql1="update groupA set teamName='$teamName', matches='$matches', won='$won', lost='$lost', tied='$tied', points='$points' ,NRR='$NRR' where teamID='$teamID'";
+
+if($conn->query($sql1)===True){
+    echo " ";
+}
+else{
+    echo "failed";
+}
+
+
+$sql = "SELECT * FROM groupA ORDER BY points DESC";
+$result = $conn->query($sql);
+
+$inc=1;
+while($row = $result-> fetch_assoc()){
+        ?>
+        <tr>
+        <td><?php echo $inc ?></td>
+        <td><?php echo $row['teamName'] ?></td>
+        <td><?php echo $row['matches'] ?></td>
+        <td><?php echo $row['won'] ?></td>
+        <td><?php echo $row['lost'] ?></td>
+        <td><?php echo $row['tied'] ?></td>
+        <td><?php echo $row['points'] ?></td>
+        <td><?php echo $row['NRR'] ?></td>
+        </tr>
+        <?php
+    $inc++;}
+?>
 </tbody>
 </table>
 </div>

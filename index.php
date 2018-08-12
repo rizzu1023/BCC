@@ -41,11 +41,13 @@
 	</header>
 
 	<br><br><br>
-	<h1>Under....Construction</h1><br></br>
+	<h1>Under....Construction</h1><br> </br>
 	<a href="registration.html" id="test">Registraion Form</a><br><br>
 	<a id="test" href="test.php">PHP test</a><br><br>
 	<a id="test" href="jquery.html">JQuery test</a><br><br>
-	<a id="test" href="javascript.html">JS test</a>
+	<a id="test" href="javascript.html">JS test</a><br><br>
+	<a href="form.html">form</a><br><br>
+	<a href="updatept.html">update points table</a>
 
 
 
