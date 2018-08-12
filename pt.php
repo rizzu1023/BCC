@@ -92,7 +92,7 @@ else{
 }
 
 
-$sql = "SELECT * FROM groupA ORDER BY points DESC";
+$sql = "SELECT * FROM groupA ORDER BY points DESC, NRR DESC";
 $result = $conn->query($sql);
 
 $inc=1;

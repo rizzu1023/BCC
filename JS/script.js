@@ -14,11 +14,37 @@
 // }
 
 
-var objt={
-	name:"Rizwan",
-	greet:function(){
-		console.log("hello "+this.name);
-	}
-}
+// var objt={
+// 	name:"Rizwan",
+// 	greet:function(){
+// 		console.log("hello "+this.name);
+// 	}
+// }
 
-objt.greet();
+// objt.greet();
+
+
+
+// var h= document.querySelector("h1");
+
+// head.style.color='blue';
+
+
+// function RandomColor(){
+// 	var letter="0123456789ABCDEF";
+// 	var colors='#';
+// 	for (var i=0; i<6; i++)
+// 	{
+// 		colors += letter[Math.floor(Math.random()*16)];
+// 	}
+// 		return colors;
+// }
+
+// function getHeaderColor(){
+// 	var colorInput = RandomColor();
+// 	h.style.color=colorInput;
+
+// }
+
+
+// setInterval("getHeaderColor()",200);
