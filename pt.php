@@ -72,7 +72,6 @@ else{
     
 }
 $teamID=$_POST['teamID'];
-$teamName=$_POST['teamName'];
 $matches=$_POST['matches'];
 $won=$_POST['won'];
 $lost=$_POST['lost'];
@@ -82,7 +81,7 @@ $NRR=$_POST['NRR'];
 
 
 
-$sql1="update groupA set teamName='$teamName', matches='$matches', won='$won', lost='$lost', tied='$tied', points='$points' ,NRR='$NRR' where teamID='$teamID'";
+$sql1="update groupA set matches='$matches', won='$won', lost='$lost', tied='$tied', points='$points' ,NRR='$NRR' where teamID='$teamID'";
 
 if($conn->query($sql1)===True){
     echo " ";
