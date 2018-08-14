@@ -47,8 +47,8 @@
 	<a id="test" href="jquery.html">JQuery test</a><br><br>
 	<a id="test" href="javascript.html">JS test</a><br><br>
 	<a href="form.html">form</a><br><br>
-	<a href="updatept.html">update points table</a>
-
+	<a href="updatept.html">update points table</a><br><br>
+	<a href="PHP/example.php">form example</a>
 
 
 	</body>
