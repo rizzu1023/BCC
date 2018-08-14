@@ -1,0 +1,7 @@
+.matchCard{
+	width: 100%;
+	background-color: red;
+	height: 100px;
+	position: relative;
+	top: 80px;
+}

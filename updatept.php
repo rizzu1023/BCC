@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +6,7 @@
 
 </head>
 <body>
-	<form  action="pt.php" method="post">
+	<form  action="PHP/updated.php" method="post">
 		<select name=teamID required="required">
 			<option value="">Team</option>	
 			<option value="rr">Rajasthan Royals</option>	
@@ -27,3 +28,4 @@
 	</form>
 </body>
 </html>
+

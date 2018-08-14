@@ -69,7 +69,7 @@ if($_POST){
 	header('Refresh:2, url=registration.html');
 }
 }else{
-	header('Refresh:0, url=registration.html');
+	header('Refresh:0, url=../registration.html');
 }
 ?>
 

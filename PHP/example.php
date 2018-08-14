@@ -28,7 +28,7 @@
     	<input type="submit" value="submit"></form>
     </form>
  <?php 
- phpinfo();  	
+ // phpinfo();  	
     }
     ?>
 

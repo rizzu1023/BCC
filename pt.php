@@ -19,7 +19,7 @@
 					<a href="#" title="live score">Live Score</a>
 				</li>
 				<li>
-					<a href="#" title="schedule">Schedule</a>
+					<a href="schedule.php" title="schedule">Schedule</a>
 				</li>
 				<li>
 					<a href="teams.html" title="teams">Teams</a>
@@ -58,41 +58,20 @@
 <tbody>
 <?php
         
-$servername="localhost";
-$username="root";
-$password="test";
-$dbname="BCC";
 
-$conn=new mysqli($servername,$username,$password,$dbname);
+$conn=new mysqli('localhost','root','test','BCC');
 
 if($conn->connect_error){
     die($conn->connect_error);
 }
-else{
+else{ 
+	echo "";
     
 }
-$teamID=$_POST['teamID'];
-$matches=$_POST['matches'];
-$won=$_POST['won'];
-$lost=$_POST['lost'];
-$tied=$_POST['tied'];
-$points=$_POST['points'];
-$NRR=$_POST['NRR'];
-
-
-
-$sql1="update groupA set matches='$matches', won='$won', lost='$lost', tied='$tied', points='$points' ,NRR='$NRR' where teamID='$teamID'";
-
-if($conn->query($sql1)===True){
-    echo " ";
-}
-else{
-    echo "failed";
-}
-
 
 $sql = "SELECT * FROM groupA ORDER BY points DESC, NRR DESC";
 $result = $conn->query($sql);
+
 
 $inc=1;
 while($row = $result-> fetch_assoc()){

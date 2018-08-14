@@ -1,9 +1,9 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>BCC</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/schedule.css"/>
 	</head>
 <body>
 	<header>
@@ -13,13 +13,13 @@
 					<a href="#" title="logo">Logo</a>
 				</li>
 				<li>
-					<a class="active" href="index.php" title="home page">Home</a>
+					<a href="index.php" title="home page">Home</a>
 				</li>
 				<li>
 					<a href="#" title="live score">Live Score</a>
 				</li>
 				<li>
-					<a href="schedule.php" title="schedule">Schedule</a>
+					<a class="active" href="schedule.php" title="schedule">Schedule</a>
 				</li>
 				<li>
 					<a href="teams.html" title="teams">Teams</a>
@@ -39,14 +39,9 @@
 			</ul>
 		</nav>
 	</header>
-
-	<br><br><br>
-	<h1>Under....Construction</h1><br> </br>
-	<a href="registration.html" id="test">Registraion Form</a><br><br>
-	<a id="test" href="jquery.html">JQuery test</a><br><br>
-	<a id="test" href="javascript.html">JS test</a><br><br>
-	<a href="PHP/example.php">form example</a>
-
+<div class="matchCard">
+	
+</div>
 
 	</body>
 </html>

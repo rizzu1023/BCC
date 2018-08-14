@@ -19,7 +19,7 @@
 					<a href="#" title="live score">Live Score</a>
 				</li>
 				<li>
-					<a href="#" title="schedule">Schedule</a>
+					<a href="schedule.php" title="schedule">Schedule</a>
 				</li>
 					<li>
 					<a href="teams.html" title="teams">Teams</a>
@@ -43,11 +43,12 @@
 <dev class="loginbox">
 <img src="image/apple.png" class="loginlogo">
 <h1>Login Here</h1>
-<form>
+<form action="admin.php" method="post">
 	<p>Username</p>
-	<input type="text" name="username" placeholder="Enter username">
+	<input type="text" name="username" placeholder="Enter username" required="required">
 	<p>Password</p>
-	<input type="Password" name="password" placeholder="Enter Password">
+	<input type="Password" name="password" placeholder="Enter Password"
+	required="required">
 	<input type="submit" name="submit" value="Login">
 	<a href="#">forgot password?</a><br>
 </form>
