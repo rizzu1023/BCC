@@ -15,7 +15,7 @@ if($_POST){
 		$res=$result->fetch_assoc();
 		if($res['password']!=$pass){
 			echo "<span>Incorrect Username or Password</span>";
-			header('Refresh:0 , url=login.html');
+			header('Refresh:1 , url=login.html');
 		}
 		}else{
 			echo "<span>Something is Missing</span>";

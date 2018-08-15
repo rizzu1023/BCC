@@ -73,6 +73,7 @@ $sql = "SELECT * FROM groupA ORDER BY points DESC, NRR DESC";
 $result = $conn->query($sql);
 
 
+
 $inc=1;
 while($row = $result-> fetch_assoc()){
         ?>

@@ -23,6 +23,7 @@ $tied=$_POST['tied'];
 $points=$_POST['points'];
 $NRR=$_POST['NRR'];
 
+
 if(!empty($teamID) && !empty($matches) && !empty($won) && !empty($lost) && !empty($tied) && !empty($points) && !empty(NRR)){
 
 $sql1="update groupA set matches='$matches', won='$won', lost='$lost', tied='$tied', points='$points' ,NRR='$NRR' where teamID='$teamID'";

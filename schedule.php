@@ -4,6 +4,7 @@
 		<title>BCC</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="css/schedule.css"/>
+		
 	</head>
 <body>
 	<header>
@@ -39,9 +40,25 @@
 			</ul>
 		</nav>
 	</header>
-<div class="matchCard">
-	
-</div>
-
+<ul class="ull">
+	<li>
+		<div class="matchCard">
+			<h6 class="matchNo">Match 23</h6>
+			<div class="match">
+				<h1 id="team1">Royel Chalengers Banglore</h1>
+				<h1 id="team2">Chennai Super Kings</h1>
+			<div class="vs">
+				<div class="vs-text">Vs</div>
+			</div>
+			</div>
+			<h6 class="date">Sunday 23-Sep-19, 4:00PM</h6>
+		</div>
+	</li>
+	<li>
+		<div class="matchCard">
+			
+		</div>
+	</li>
+</ul>	
 	</body>
 </html>
