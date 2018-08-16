@@ -26,7 +26,7 @@
 	
 width: 100%;
 position: relative;
-/*background-color: red;*/
+background-color: #000;
 height: 50%;
 top: 24%;
 display: inline-block;
@@ -70,14 +70,15 @@ border-bottom:1px solid #fff;
 .matchNo{
 	position:absolute;
 	color: #fff;
-	left:47%;	
+	left:45%;	
 	top: -25px;
 	font-size: 15px;
+
 }
 
 .date{
 	position: absolute;
-	left:42%;
+	left:40%;
 	color: #fff;
 	font-size: 16px;
 	top: 85px;

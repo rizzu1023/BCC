@@ -40,25 +40,47 @@
 			</ul>
 		</nav>
 	</header>
+<?php
+
+$conn=new mysqli('localhost','root','test','BCC');
+
+if($conn->connect_error){
+    die($conn->connect_error);
+}
+else{ 
+	echo "";
+}
+
+$sql="SELECT * FROM schedule2018 ORDER BY dates ASC, matchID ASC";
+$result=$conn->query($sql);
+
+if(empty($result)){ echo "adfs";}else{echo "43534";}
+if(true)
+{
+	
+while($i=$result->fetch_assoc()){
+
+?>
 <ul class="ull">
 	<li>
 		<div class="matchCard">
-			<h6 class="matchNo">Match 23</h6>
+			<h6 class="matchNo">Match <?php echo $i['matchID'].", ".$i['groupName']?></h6>
 			<div class="match">
-				<h1 id="team1">Royel Chalengers Banglore</h1>
-				<h1 id="team2">Chennai Super Kings</h1>
+				<h1 id="team1"><?php echo $i['team1Name']?></h1>
+				<h1 id="team2"><?php echo $i['team2Name']?></h1>
 			<div class="vs">
 				<div class="vs-text">Vs</div>
 			</div>
 			</div>
-			<h6 class="date">Sunday 23-Sep-19, 4:00PM</h6>
+			<h6 class="date"><?php echo $i['days'].", ".$i['dates'].", ".$i['times']?></h6>
 		</div>
 	</li>
-	<li>
-		<div class="matchCard">
-			
-		</div>
-	</li>
+<?php }
+}else{
+	echo "<span>No Result Found</span>";
+}
+ ?>
+	
 </ul>	
 	</body>
 </html>
