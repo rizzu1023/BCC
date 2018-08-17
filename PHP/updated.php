@@ -2,7 +2,7 @@
 
 $servername="localhost";
 $username="root";
-$password="test";
+$password="root";
 $dbname="BCC";
 $conn=new mysqli($servername,$username,$password,$dbname);
 
@@ -25,6 +25,8 @@ $NRR=$_POST['NRR'];
 
 
 if(!empty($teamID) && !empty($matches) && !empty($won) && !empty($lost) && !empty($tied) && !empty($points) && !empty(NRR)){
+
+
 
 $sql1="update groupA set matches='$matches', won='$won', lost='$lost', tied='$tied', points='$points' ,NRR='$NRR' where teamID='$teamID'";
 

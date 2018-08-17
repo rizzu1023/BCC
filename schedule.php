@@ -42,7 +42,7 @@
 	</header>
 <?php
 
-$conn=new mysqli('localhost','root','test','BCC');
+$conn=new mysqli('localhost','root','root','BCC');
 
 if($conn->connect_error){
     die($conn->connect_error);
@@ -51,10 +51,10 @@ else{
 	echo "";
 }
 
-$sql="SELECT * FROM schedule2018 ORDER BY dates ASC, matchID ASC";
+$sql="SELECT * FROM schedule2018 ORDER BY matchID ASC, dates ASC";
 $result=$conn->query($sql);
 
-if(empty($result)){ echo "adfs";}else{echo "43534";}
+
 if(true)
 {
 	

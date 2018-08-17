@@ -1,12 +1,12 @@
 <?php
 
-$conn=new mysqli('localhost','root','test','BCC');
-
+$conn=new mysqli('localhost','root','root','BCC');
 
 
 if($_POST){
 	$user=$_POST['username'];
 	$pass=$_POST['password'];
+
     
 	if(!empty($user) && !empty($pass)){
 
@@ -61,6 +61,12 @@ if($_POST){
 	</style>
 </head>
 <body>
-	<a href="updatept.php"><div class=anchor><h2>Update Points Table</h2></div></a>
+	<form action="updatept.php" method="post">
+		<input type="submit" name="update" value="Update Points Table">
+	</form>
+	<form action="PHP/updateSchedule.php" method="post">
+		<input type="submit" name="update" value="Update Schedule">
+	</form>
+	
 </body>
 </html>

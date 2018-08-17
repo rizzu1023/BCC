@@ -1,4 +1,6 @@
-<?php $csk="mumbai indians";?>
+<?php 
+	if(!empty($_POST)){
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,3 +31,7 @@
 </body>
 </html>
 
+<?php }else{
+	Header('Refresh:0 url=login.html');
+}
+?>
