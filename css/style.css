@@ -1,21 +1,19 @@
 body{
-	font-size: 16pt    /*basically 16pt font size is used in websites*/
+	font-size: 16px;    /*basically 16pt font size is used in websites*/
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* position: relative; */
-	/*background-position: center;
-	background-size: cover;*/
-
+	background-color:#eee;
 }
 
 header ul{
 	margin: 0;
 	position: relative;
+	padding-left: 10px;
 }
 
 header nav{
-	background-color:#2f2f2f;
+	background-color:#eee;
 	margin: 0;
 	padding-left: 0;
 	position: fixed;
@@ -23,24 +21,23 @@ header nav{
 	right: 0;
 	width: 100%;
 	z-index: 9999;
+	box-shadow: 0px -1px 8px black;
 }
-
-
 
 header nav ul li{
 	display: inline-block;
 	padding: 0px;
     float: left;
     text-align: center;
-    font-size: 16pt;
-		position: relative;
+    font-size: 17px;
+	position: relative;
 
 }
 
 header nav ul li a{
 	text-decoration: none;
-	color: #ffffff;
-	padding: 18px 20px;
+	color: #000;
+	padding: 18px 17px;
 	display: inline-block;
 
 	}
@@ -48,15 +45,11 @@ header nav ul li a{
 
 
 header nav ul li:hover{
-	background-color: #3CB4f2;
-	/* background-color: #333; */
-	/* text-shadow: 2px 2px 3px #fff; */
+	border-bottom: 2px solid #000;
 }
 
 .active{
-    background-color: #3CB4f2;
-	border-right: 0.5px solid #fff;
-	border-left: 0.5px solid #fff;
+   border-bottom: 2px solid #000;
 }
 
 

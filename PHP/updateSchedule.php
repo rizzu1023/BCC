@@ -15,14 +15,16 @@ if($_POST){
 			<option value="remove">Remove Match</option>
 			<option value="update">Update Match</option>
 		</select>
-		<input type="submit" name="submit">
+		<input type="submit" name="submit" value="submit">
 	</form>
 <?php
+
+
 if($_POST['opt']=='add'){
 	?>
 	<form action="scheduleUpdate.php" method="post">
 		<input type="number" name="matchNo" placeholder="Match No." required="required">
-		<select name=team1ID required="required">
+		<select name=team2ID required="required">
 			<option value="">Team1</option>	
 			<option value="rr">Rajasthan Royals</option>	
 			<option value="kxip">Kings XI Punjab</option>	
@@ -33,7 +35,7 @@ if($_POST['opt']=='add'){
 			<option value="mi">Mumbai Indians</option>	
 			<option value="kkr">Kolkata Knight Riders</option>	
 		</select>
-		<select name=team2ID required="required">
+		<select name=team1ID required="required">
 			<option value="">Team2</option>	
 			<option value="rr">Rajasthan Royals</option>	
 			<option value="kxip">Kings XI Punjab</option>	
@@ -65,18 +67,30 @@ if($_POST['opt']=='add'){
 		<input type="submit" name="submit">
 
 	</form>
+
+
+
 <?php }elseif($_POST['opt']=='remove')
 {
 	?>
-	<form action="scheduleUpdated.php">
-		<input type="text" name="RemoveMatch" placeholder="Remove Match">
+	<form action="scheduleUpdate.php" method="post">
+		<input type="number" name="matchNo" placeholder="Match Number">
+		<input type="hidden" name="check" value="remove">
+		<input type="submit" value="submit">
 	</form>
-<?php }elseif($_POST['opt']=='update'){
+
+
+
+<?php }
+elseif($_POST['opt']=='update'){
 	?>
 	<form action="scheduleUpdated.php">
 		<input type="text" name="UpdateMatch" placeholder="Update Match">
 	</form>
-<?php }}else{
+<?php }
+
+
+}else{
 	Header('Refresh:0  url=../login.html');
 }?>
 </body>

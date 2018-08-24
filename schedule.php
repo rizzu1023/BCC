@@ -40,6 +40,7 @@
 			</ul>
 		</nav>
 	</header>
+<main>
 <?php
 
 $conn=new mysqli('localhost','root','root','BCC');
@@ -58,29 +59,30 @@ $result=$conn->query($sql);
 if(true)
 {
 	
-while($i=$result->fetch_assoc()){
-
 ?>
 <ul class="ull">
-	<li>
-		<div class="matchCard">
-			<h6 class="matchNo">Match <?php echo $i['matchID'].", ".$i['groupName']?></h6>
-			<div class="match">
-				<h1 id="team1"><?php echo $i['team1Name']?></h1>
-				<h1 id="team2"><?php echo $i['team2Name']?></h1>
-			<div class="vs">
-				<div class="vs-text">Vs</div>
-			</div>
-			</div>
-			<h6 class="date"><?php echo $i['days'].", ".$i['dates'].", ".$i['times']?></h6>
-		</div>
+	 <?php
+	 while($i=$result->fetch_assoc()){
+	 	?>
+	<li><div class="bg"></div>
+		<div class="team1"><?php echo $i['team1Name']?></div>
+		<div class="vs">V/s</div>
+		<div class="team2"><?php echo $i['team2Name']?></div>
+		<div class="matchNo">Match No.<h2><?php echo $i['matchID']?></h2></div>
+		<div class="date"><?php echo $i['days']?><span><?php echo $i['dates']?></span><?php echo $i['times']?></div>
+		<div class="group">Group<h2><?php echo $i['groupName']?></h2></div>
 	</li>
-<?php }
+
+	<?php }
 }else{
 	echo "<span>No Result Found</span>";
 }
  ?>
 	
-</ul>	
-	</body>
+</ul>
+		
+
+
+</main>
+</body>
 </html>

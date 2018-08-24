@@ -39,9 +39,19 @@ if($_POST['check']=='add')
 }
 
 
-elseif($_POST['submit']=='remove')
+elseif($_POST['check']=='remove')
 {
 
+$matchNo=$_POST['matchNo'];
+if(!empty($matchNo)){
+
+	$sql="DELETE FROM schedule2018 WHERE matchID='$matchNo'";
+	if($conn->query($sql)){
+			echo "<span>Schedule Successfully Updated </span>";
+		}else{
+			echo "<span>Somthing Went Wrong!</span>";
+		}
+}
 }
 
 elseif($_POST['submit']=='update')

@@ -24,7 +24,7 @@ $points=$_POST['points'];
 $NRR=$_POST['NRR'];
 
 
-if(!empty($teamID) && !empty($matches) && !empty($won) && !empty($lost) && !empty($tied) && !empty($points) && !empty(NRR)){
+if(!empty($teamID) && !empty($matches) && !empty($won) && !empty($lost) && !empty($tied) && !empty($points) && !empty($NRR)){
 
 
 

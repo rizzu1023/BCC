@@ -1,80 +1,89 @@
-.ull, li{
-		position: relative;
-		list-style: none;
-		float: left;
-
+body{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
 
 .ull{
-	position: relative;
-	padding: 0;
-	margin-top: 30px;
-	width: 100%;
+	margin-top: 75px;
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-row-gap: 25px;
+	grid-column-gap: 20px;
+	padding-left: 12px;
+	padding-right: 12px;
+
 }
 
-
-.teamBackground{
-	/* background-image: url(../image/kkr.jpg); */
-	background-size: cover;
-	background-position: relative;
+.ull li{
+	width: auto;
+	height: 360px;
+	border: 1px solid black;	
+	display: inline-block;
+	position: relative;
 	border-radius: 6px;
-	margin-top: 30px;
-	margin-left: 10px;
-
-}
-
-.teamBackground:hover{
-	opacity: .6;
-}
-
-
-
-.teamCard{
-  width: 300px;
-  height: 340px;
-  border-radius: 6px;
-  display: inline-block;
-	margin-left: 8px;
-	box-shadow: 3px 3px 4px  #000;
-
-}
-
-
-
-.teamName{
-	text-decoration-style: none;
-	color: #fff;
-	font-weight: solid;
-	font-size: 28px;
 	text-align: center;
-	position: relative;
-	top: 130px;
-	font-family: sans-serif;
+	
 }
 
 
-.teamLogo{
-	width: 150px;
-	height: 150px;
+.ull li img{
+	height:150px; 
+	width:150px;
 	position: absolute;
-	left: 70px;
-	top: -10px;
 	border-radius: 100px 50px;
 	border-right: 5px solid #fff;
-	/* border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-	border-left: 1px solid #fff; */
+	left:25%;
+	top:-15px;
+
 }
 
-.winner{
+.ull li a{
 	text-decoration: none;
-	color: gold;
-	font-weight: solid;
-	position: relative;
-	text-align: center;
-	top: 150px;
-	border:2px solid gold;
-	width: 40%;
-	margin:0 auto;
-	border-radius: 8px;
+}
+
+.teamName{
+	position:relative;
+	color: black;
+	font-size: 27px;
+	font-weight: bold;
+	top: 52%;
+	/*text-align: center;*/
+}
+
+
+.winner{
+	position: absolute;
+	top: 80%;
+	left: 33%;
+	color: black;
+	border-bottom: 2px solid black;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+
+.ull li:nth-child(1){
+	background: lightblue;
+	
+	}
+.ull li:nth-child(2){
+	background: #eee;}
+.ull li:nth-child(3){
+	background: lightgreen;}
+.ull li:nth-child(4){
+	background: lightyellow;}
+.ull li:nth-child(5){
+	background: #ccc;}
+.ull li:nth-child(6){
+	background: lightblue;}
+.ull li:nth-child(7){
+	background: #ddd;}
+.ull li:nth-child(8){
+	background: lightcyan;}	
+
+
+.ull li:hover{
+	transform: scale(1.02,1.02);
 }

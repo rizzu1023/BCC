@@ -2,8 +2,18 @@
 <html>
 <head>
 	<title>Your Registration Info</title>
-	
+	<style>
+		table{
+			border: 2px solid black;
+		}
+		table td{
+			padding:2px;
+		}
+		table tr:nth-child(odd){
+			background-color: yellow; 
+		}
 	</style>
+	
 </head>
 <body>
 
@@ -26,7 +36,7 @@ if($_POST){
 
 	if(!empty($rollno) && !empty($name) && !empty($gender) && !empty($address) && !empty($dob) && !empty($sem) && !empty($semail) && !empty($dept) && !empty($batch)){
 
-$link=mysql_connect('localhost','root','test','AIKTC');
+$link=mysql_connect('localhost','root','root','AIKTC');
 if(!$link){
 	echo '<br>Unable to connect to Databases.'.mysqli_connect_error();
 }
