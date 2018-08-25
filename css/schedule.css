@@ -5,14 +5,14 @@
 	margin-top: 90px;
 	padding: 0 15px;
 
-}
+} 
 
 .ull li{
 	height: 115px;
 	width: auto;
 	border-radius: 10px;
 	list-style: none;
-	background: #8FCF4F;
+	background: linear-gradient(to left,#8FCF4F,orange);
 	position: relative;
 	border:	1px solid #8FCF4F;
 
@@ -99,4 +99,81 @@
 	position: absolute;
 	font-size: 37px;
 	top: 3px;
+}
+
+/*for update schedule page*/
+
+.selection{
+	position: relative;
+	/*background: pink;*/
+	width: 19%;
+	left:33%;
+	top: 100px;
+	text-align: center;
+
+}
+
+
+.selection select{
+	width: 250px;
+	height: 50px;
+	background: #add886;  
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	padding-left: 15px;
+	color: black;
+	outline:none;
+	border:none; 	
+	border-radius: 25px 0 0 25px;
+}
+
+.selection input{
+	height: 50px;
+	width: 100px;
+	border-radius: 0 25px 25px 0;
+	border:none;
+	outline:none;
+	position: absolute;
+	margin-left:-2px;
+	background-color: black;
+	color: #fff;
+}
+
+/*.selection select{background: transparent;}*/
+.selection::after{
+	content: " \f13a";
+	font-family: "FontAwesome";
+	font-size:23px;
+	color: black;
+	position: absolute;
+	top: 13px;
+	right: 21px;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.selection2{
+	width: 70%;
+	height: 200px;
+	position: relative;
+	left:15%;
+	top:150px;
+	background: orange;
+
+}
+
+
+
+
+.selection2 .team1{
+	position: absolute;
+	top: 10%;
+	left:2%;
+
+}
+
+.selection2 .team2{
+	position: absolute;
+	top: 10%;
+	left: 52.5%;
 }

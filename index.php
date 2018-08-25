@@ -42,7 +42,7 @@
 
 	<br><br><br>
 	<h1>Under....Construction</h1><br> </br>
-	<a href="registration.html" id="test">Registraion Form</a><br><br>
+	<a href="WDL/index.html" id="test">WDL</a><br><br>
 	<a id="test" href="jquery.html">JQuery test</a><br><br>
 	<a id="test" href="javascript.html">JS test</a><br><br>
 	<a href="PHP/example.php">form example</a>
