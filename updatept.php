@@ -31,7 +31,8 @@
 </body>
 </html>
 
-<?php }else{
+<?php }
+else{
 	Header('Refresh:0 url=login.html');
 }
 ?>

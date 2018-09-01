@@ -112,11 +112,14 @@ if($_POST['opt']=='add'){
 <?php }elseif($_POST['opt']=='remove')
 {
 	?>
+	<div class="deletion">
 	<form action="scheduleUpdate.php" method="post">
-		<input type="number" name="matchNo" placeholder="Match Number">
+		<label for="matchNo">Match No</label>
+		<input type="text" name="matchNo">
 		<input type="hidden" name="check" value="remove">
-		<input type="submit" value="submit">
+		<input type="submit" value="">
 	</form>
+    </div>
 
 
 

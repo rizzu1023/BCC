@@ -71,7 +71,9 @@ if(true)
 		<div class="matchNo">Match No.<h2><?php echo $i['matchID']?></h2></div>
 		<div class="date"><?php echo $i['days']?><span><?php echo $i['dates']?></span><?php echo $i['times']?></div>
 		<div class="group">Group<h2><?php echo $i['groupName']?></h2></div>
+
 	</li>
+	
 
 	<?php }
 }else{

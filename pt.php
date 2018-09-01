@@ -93,7 +93,7 @@ while($row = $result-> fetch_assoc()){
 </tbody>
 </table>
 </div>
-<img src="image/bg.jpg">
+<!-- <img src="image/bg.jpg"> -->
 
 
 

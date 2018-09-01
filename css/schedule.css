@@ -1,7 +1,7 @@
 .ull{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-row-gap: 22px;
+	grid-row-gap: 45px;
 	margin-top: 90px;
 	padding: 0 15px;
 
@@ -107,7 +107,8 @@
 	position: relative;
 	/*background: pink;*/
 	width: 19%;
-	left:33%;
+	left:46%;
+	transform: translate(-50%,-50%);
 	top: 100px;
 	text-align: center;
 
@@ -176,4 +177,49 @@
 	position: absolute;
 	top: 10%;
 	left: 52.5%;
+}
+
+.deletion{
+	position: absolute;
+	left:50%;
+	transform: translate(-50%,-50%);
+	top: 200px;
+	border: 1px solid black;
+	padding: 6px 20px;
+	width: 225px;
+	border-radius: 25px;
+}
+
+.deletion input[type="text"]{
+	border-radius: 50%;
+	height: 45px;
+	width: 45px;
+	border: none;
+	background: #add886;
+	font-size: 30px;
+	padding:7px;
+
+}
+
+.deletion input[type="submit"]{
+	position: absolute;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	border: none;
+	background: black;
+	margin-left: 5px;
+
+}
+
+.deletion::after{
+	content: " \f058";
+	font-family: "FontAwesome";
+	font-size: 55px;
+	z-index: 1;
+	color: white;
+	position: absolute;
+	pointer-events: none;
+	top: 8px;
+	right: 42px;
 }
